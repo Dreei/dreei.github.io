@@ -480,6 +480,9 @@ h3 {
         padding: 20px 0;
     }
 
+    .Name {
+        font-size: 1.5rem; /* Adjust size for smaller screens */
+    }
 
     /* Ensure the dropdown menu icon is aligned correctly */
     .drop-down-menu {
