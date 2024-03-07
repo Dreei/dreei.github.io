@@ -63,6 +63,26 @@ body, html {
     display: block; /* Ensure proper alignment */
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.social-icon {
+    margin: 0 10px; /* Adjust margin between icons */
+    transition: transform 0.3s ease;
+}
+
+.social-icon img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Add hover effect */
+.social-icon:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
 
 
 
@@ -192,26 +212,7 @@ body, html {
     padding: 20px 0;
     text-align: center;
 }
-.social-icons {
-    display: flex;
-    justify-content: left;
-    margin-top: 10px; /* Adjust margin as needed */
-}
 
-.social-icon {
-    margin: 0 10px; /* Adjust margin between icons */
-    transition: transform 0.3s ease;
-}
-
-.social-icon img {
-    width: 50px; /* Adjust size as needed */
-    height: auto;
-}
-
-/* Add hover effect */
-.social-icon:hover {
-    transform: scale(1.1); /* Increase size on hover */
-}
 
 .timeline {
     margin: 20px auto;
