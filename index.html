@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benz Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="headercontainer">
+            <h1 class="logo">Benz.</h1>
+            <!-- Nav buttons for full-screen mode -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#intro" class="nav-link">Home</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Drop-down menu for smaller screens -->
+            <div class="drop-down-menu">
+                <div class="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <!-- Nav links for smaller screens -->
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="#intro" class="nav-link">Home</a></li>
+                        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div id="intro" class="intro">
+        <div class="container">
+            <div class="profile-pic">
+                <img src="Picture.jpg" alt="Profile Picture">
+            </div>
+            <h2 class="Name">Andrei Villanueva</h2>
+            <p>Fullstack Developer</p>
+            <div class="social-icons">
+                <a href="https://github.com" class="social-icon" id="github-link">
+                    <img src="github-logo.png" alt="GitHub Logo">
+                </a>
+                <a href="https://linkedin.com" class="social-icon" id="linkedin-link">
+                    <img src="linkedin-logo.png" alt="LinkedIn Logo">
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id ="portfolio" class=portfolio-container">
+        <div class="container">
+        <h2>Portfolio</h2>
+        <p>Here are projects that I've done over the years!</p>
+        </div>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="placeholder.jpg" alt="Image 1">
+                <h2>Project 1</h2>
+                <p>Description of project 1</p>
+                <a href="#" class="code-button">View Code</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="placeholder.jpg" alt="Image 2">
+                <h2>Project 2</h2>
+                <p>Description of project 2</p>
+                <a href="#" class="code-button">View Code</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="placeholder.jpg" alt="Image 2">
+                <h2>Project 3</h2>
+                <p>Description of project 3</p>
+                <a href="#" class="code-button">View Code</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="placeholder.jpg" alt="Image 2">
+                <h2>Project 4</h2>
+                <p>Description of project 2</p>
+                <a href="#" class="code-button">View Code</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="placeholder.jpg" alt="Image 2">
+                <h2>Project 5</h2>
+                <p>Description of project 2</p>
+                <a href="#" class="code-button">View Code</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="placeholder.jpg" alt="Image 2">
+                <h2>Project 6</h2>
+                <p>Description of project 2</p>
+                <a href="#" class="code-button">View Code</a>
+            </div>
+            <!-- Add more portfolio items -->
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="skills">
+                <h3>Frontend Skills</h3>
+                <ul class="skill-list frontend">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <!-- Add more frontend skills as needed -->
+                </ul>
+    
+                <h3>Backend Skills</h3>
+                <ul class="skill-list backend">
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <!-- Add more backend skills as needed -->
+                </ul>
+    
+                <h3>Other Skills</h3>
+                <ul class="skill-list other">
+                    <li>Git</li>
+                    <li>RESTful APIs</li>
+                    <li>SQL</li>
+                    <li>Agile Methodologies</li>
+                    <!-- Add more other skills as needed -->
+                </ul>
+            </div>
+            <p>About content goes here...</p>
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Contact information goes here.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Benz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

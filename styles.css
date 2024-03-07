@@ -1,0 +1,553 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Exo', sans-serif;
+    background-color: #0a0a0a; /* Dark background */
+    color: #fff; /* Light text color */
+    overflow-x: hidden; /* Hide horizontal overflow */
+
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.headercontainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: slideLeft 2s ease-in-out forwards;
+    background-image: url('https://i.gifer.com/4NB4.gif'); /* Replace 'your-tech-gif.gif' with your actual GIF file path */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-position: center center; /* Center the background image */
+    padding: 50px 0; /* Add padding for spacing */
+    text-align: center; /* Center align the content */
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.profile-pic {
+    width: 250px; /* Set width for profile picture container */
+    height: 250px; /* Set height for profile picture container */
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide overflowing content */
+    margin: 0 auto 20px; /* Center align the container and add spacing below */
+}
+
+.profile-pic img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper alignment */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+.header {
+    background-color: #111; /* Dark header background */
+    color: #fff;
+    padding: 20px 0;
+    position: fixed; /* Set the header position to fixed */
+    top: 0; /* Align the header to the top of the viewport */
+    width: 100%; /* Make the header span the full width of the viewport */
+    z-index: 1000; /* Ensure the header is on top of other content */
+}
+
+.logo {
+    margin: 0;
+    font-size: 2rem;
+    position: absolute;
+    left: 25px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end; /* Align nav buttons to the right */
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin-left: 0px; /* Adjust spacing between navigation links */
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 35px; /* Add padding to the navigation links */
+}
+
+.nav-links li a {
+    position: relative; /* Ensure proper stacking order for the highlight effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth animation */
+}
+
+.nav-links li a::after {
+    content: ''; /* Create a pseudo-element to generate the highlight effect */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Initial transparent background */
+    z-index: -1; /* Place behind the anchor text */
+    transition: background-color 0.3s ease; /* Add transition for smooth animation */
+}
+
+.nav-links li a:hover::after {
+    background-color: rgba(255, 255, 255, 0.2); /* Change background color on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Optional: Add box shadow effect on hover */
+}
+
+.intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #0a0a0a; /* Black background */
+}
+
+.intro h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.5rem;
+}
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #333; /* Darker background for portfolio items */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow effect */
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #111; /* Dark footer background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.social-icons {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.social-icon {
+    margin: 0 10px; /* Adjust margin between icons */
+    transition: transform 0.3s ease;
+}
+
+.social-icon img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Add hover effect */
+.social-icon:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.timeline {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    position: relative;
+}
+
+.point {
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.point:hover {
+    background-color: #e0e0e0;
+}
+
+.year {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.info-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+
+.intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #0a0a0a; /* Black background */
+}
+
+.intro h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.5rem;
+}
+
+.drop-down-menu {
+    display: none; /* Hide the drop-down menu by default */
+}
+
+/* Style for the bars */
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+
+/* Rotate the first and the third bar to create the hamburger effect */
+.bar:first-child {
+    transform-origin: left;
+}
+
+.bar:last-child {
+    transform-origin: right;
+}
+
+
+/* PORTFOLIO SECTION */
+
+.portfolio-container {
+    padding: 20px;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Spacing between portfolio items */
+    justify-content: center; /* Center items horizontally */
+}
+
+.portfolio-item {
+    flex: 0 0 calc(33.33% - 20px); /* Set width for three items per row */
+    padding: 30px; /* Adjust padding */
+    background-color: #323232; /* Background color */
+    border-radius: 20px; /* Border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-bottom: 20px; /* Adjust margin between items */
+}
+
+.portfolio-item img {
+    width: 100%; /* Ensure images fill the container */
+    border-radius: 50px; /* Border radius for images */
+}
+
+/* Button styles */
+.code-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button hover effect */
+.code-button:hover {
+    background-color: #ff0000; /* Red background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Button animation */
+.code-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red color */
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.code-button:hover::before {
+    width: 100%; /* Expand the highlight from left to right on hover */
+}
+
+/* PORTFOLIO SECTION  END */
+
+
+/* WEBKITS */
+
+/* Hide default scrollbar */
+::-webkit-scrollbar {
+    background: transparent; /* Make scrollbar invisible */
+    width: 12px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; /* Transparent background */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5); /* Transparent background with some opacity */
+    border-radius: 6px; /* Rounded corners for the scrollbar handle */
+}
+
+/* WEBKITS END*/
+
+/* ABOUT ME SECTION */
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* About section styles */
+.about {
+    background-color: #323232; /* Light background color */
+    padding: 50px 0;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.skills {
+    margin-bottom: 30px;
+}
+
+.skills h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+/* ABOUT ME END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Show navigation links in fullscreen mode */
+@media only screen and (min-width: 768px) {
+    .nav-links ul {
+        display: flex;
+    }
+
+    /* Hide the dropdown menu icon */
+    .drop-down-menu {
+        display: none;
+    }
+}
+
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1440px) {
+    .headercontainer {
+        /* position: absolute; Ensure relative positioning for absolute child */
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+
+    /* Ensure the dropdown menu icon is aligned correctly */
+    .drop-down-menu {
+        display: block; /* Ensure the drop-down menu is visible */
+        position: absolute;
+        top: 25px; /* Adjust the distance from the top edge */
+        right: 25px; /* Adjust the distance from the right edge */
+        cursor: pointer;
+        z-index: 1000; /* Ensure the menu appears above other elements */
+    }
+
+    .menu-icon {
+        cursor: pointer;
+    }
+
+    .menu-icon .bar {
+        width: 25px;
+        height: 3px;       
+        background-color: #fff;
+        margin: 5px 0;
+        transform: translateY(-50%);
+
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: calc(100% + 10px); /* Position below the icon with some spacing */
+        right: 0; /* Align the menu to the right */
+        background-color: #111; /* Background color of the dropdown */
+        padding: 20px;
+        border-radius: 5px;
+        z-index: 1000; /* Ensure the menu appears above other elements */
+        flex-direction: column; /* Change direction to vertical */
+    }
+
+
+    .nav-links.active {
+        display: block;
+    }
+
+    /* Style the navigation links */
+    .nav-links li {
+        list-style: none;
+        margin: 30px 15px;
+    }
+
+    .nav-links li a {
+        position: relative; /* Ensure proper stacking order for the highlight effect */
+        transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth animation */
+    }
+    
+    .nav-links li a::after {
+        content: ''; /* Create a pseudo-element to generate the highlight effect */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0); /* Initial transparent background */
+        z-index: -1; /* Place behind the anchor text */
+        transition: background-color 0.3s ease; /* Add transition for smooth animation */
+    }
+    
+    .nav-links li a:hover::after {
+        background-color: rgba(255, 255, 255, 0.2); /* Change background color on hover */
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Optional: Add box shadow effect on hover */
+    }
+}
+
+
